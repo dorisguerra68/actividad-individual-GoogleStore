@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google-Store/User</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/normalize.css"/>
+    <link rel="stylesheet" href="styles/reponsive.css"/>
+ 
+    <!-- Es la fuente que se debe añadir a nuestro index.html> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+      <nav>
+        <!--logo-->
+        <div class="google-logo">
+            <a href="Index.html"><img src="/img/google-logo.png" alt="Logo Google"></a>
+        </div>
+        <!--Menú-->
+        <ul class="nav-links">
+          <li><a href="#">Phones</a></li>
+          <li><a href="#">Earbuds</a></li>
+          <li><a href="#">Watches</a></li>
+          <li><a href="#">Smart Home</a></li>
+          <li><a href="#">Accesories</a></li>
+          <li><a href="usuario.html">Subscriptions</a></li> 
+        </ul>
+        <!--Iconos de Acción-->
+        <div class="nav-icons">
+        <ul>
+          <li><a href="#" >
+          <img src="/img/icons/Search.svg" alt="serch,busqueda">  
+          </a></li>
+          <li><a href="#">
+            <img src="/img/icons/Help.svg" alt="Help,Ayuda">
+          </a></li>
+          <li><a href="#">
+            <img src="/img/icons/Cart.svg" alt="Cart,carrito de compra">
+          </a></li>
+          <li><a href="usuario.html">
+            <img src="/img/icons/Avatar.svg" alt="User,Usuario"></a></li>
+        </ul>
+        </div>
+        <!--este icono se usará en tamaño de móvil-->
+        <ul class="menu-mobile">
+          <li><img src="/img/icons/menu-icon1.svg" alt="menu"></li>
+        </ul>
+      </nav>
+    </header>
+    
+<main id="form">
+    
+    <form id="userForm">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" placeholder="Ej: Juan Pérez" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" placeholder="correo@ejemplo.com" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" min="1" max="120">
+
+        <button type="submit">Guardar Datos</button>
+    </form>
+
+    <div id="mensaje" style="margin-top: 20px; font-weight: bold;"></div>
+
+    
+</main>
+    
+<!-- INICIO footer-->
+<footer class="site-footer">
+
+    <div class="site-redes-sociales">
+      <ul class="lista-redes-sociales">
+        <li>
+          <a href="#" aria-label="X">
+            <img src="img/icons/SM-x.svg" alt="X" class="icon">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Instagram">
+            <img src="img/icons/SM-instagram.svg" alt="Instagram" class="icon">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Facebook">
+            <img src="img/icons/SM-facebook.svg" alt="Facebook" class="icon">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="YouTube">
+            <img src="img/icons/SM-youtube.svg" alt="YouTube" class="icon">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="TikTok">
+            <img src="img/icons/SM-tiktok.svg" alt="TikTok" class="icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <nav class="site-footer-politicas" aria-label="Políticas del sitio">
+      <ul class="lista-politicas">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Google Nest Commitment to Privacy</a></li>
+        <li><a href="#">Sales Terms</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-pais">
+      <a href="#" aria-label="País seleccionado: España">
+        <img src="img/icons/Spain.svg" alt="Bandera de España" class="icon-bandera">
+      </a>
+      <span>Spain</span>
+    </div>
+
+  </footer>
+
+</body>
+<script src="script.js"></script>
+</html>
