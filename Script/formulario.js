@@ -1,4 +1,5 @@
 // Seleccionamos el formulario y el div del mensaje
+// busca el formulario que tiene ID
 const formulario = document.getElementById('userForm');
 const mensajeDiv = document.getElementById('mensaje');
 
@@ -11,13 +12,18 @@ formulario.addEventListener('submit', event => {
     const email = document.getElementById('email').value;
     const edad = document.getElementById('edad').value;
 
+    //validación sí es mayor o no
+    if (edad < 18){
+        mensajeDiv.innerText = `Lo sentimos ${nombre}, debe ser mayor de edad para registrarte.`;
+        mensajeDiv.style.color = "orange";
+    return;
+    }
     // Mostramos los datos en la consola 
-    console.log("Datos recibidos:", { nombre, email, edad });
-    //if (edad >= 18)
+    console.log("Datos recibidos correctamente:", { nombre, email, edad });
 
     // Mostramos un mensaje de éxito en la página
     mensajeDiv.innerText = `¡Gracias ${nombre}! Tus datos han sido registrados.`;
-    
-    // Opcional: Limpiar el formulario
+    mensajeDiv.style.color = "Blue";
+    // Limpiar el formulario
     formulario.reset();
 });
